@@ -6,7 +6,7 @@ For example 16 is a perfect square because 16 = 4*4. However 15 is not a perfect
 there is no integer n such that 15 = n*n.
 
 The signature of the function is
-int isPerfectSquare(int n)
+int nextPerfectSquare(int n)
 Examples
  -------------------------|--------------------------------------------------------------
 | n                       | next perfect square                                          |
