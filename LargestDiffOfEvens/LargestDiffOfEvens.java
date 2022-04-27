@@ -20,10 +20,7 @@ public class LargestDiffOfEvens {
                     }
                 }
             }
-            if (!evenFlag && i == a.length - 1)
-                return -1;
         }
-
-        return largestDiff;
+        return !evenFlag ? -1 : largestDiff;
     }
 }
