@@ -6,10 +6,12 @@ public class OneTwoOne {
         System.out.println(is121Array(new int[]{1,1,1,2,1,1,1}));         // 1
         System.out.println(is121Array(new int[]{1,1,1,0,1,1,1}));         // 0
         System.out.println(is121Array(new int[]{1,1,2,2,1,1,2,2,1,1}));   // 0
+        System.out.println(is121Array(new int[]{1,2}));                   // 0
+        System.out.println(is121Array(new int[]{}));                      // 0
     }
 
     public static int is121Array(int[] nums) {
-        if (nums.length<3 && nums[0]!=1 && nums[nums.length-1]!=1) {
+        if (nums.length<3 || nums[0]!=1 || nums[nums.length-1]!=1) {
             return 0;
         }
 
