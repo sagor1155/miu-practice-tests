@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrPOE {
     public static void main(String[] args) {
         System.out.println(poeIndex(new int[]{1,8,3,7,10,2}));
@@ -9,6 +11,25 @@ public class ArrPOE {
     }
 
     public static int poeIndex(int[] nums) {
-        return 0;
+        if (nums.length<3) {
+            return -1;
+        }
+
+        for (int i=1; i<nums.length-1; i++) {
+            int leftSum = getSum(Arrays.copyOfRange(nums, 0, i));
+            int rightSum = getSum(Arrays.copyOfRange(nums, i+1, nums.length));
+            if (leftSum==rightSum) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static int getSum(int[] arr) {
+        int sum = 0;
+        for (int i=0; i<arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
     }
 }
