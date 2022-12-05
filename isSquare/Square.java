@@ -8,12 +8,6 @@ public class Square {
     }
 
     public static int isSquare(int number) {
-        if (number < 0) {
-            return 0;
-        }
-        for (int n = 0; n*n <= number; n++) {
-            if (n*n == number) return 1;
-        }
         return 0;
     }
 }

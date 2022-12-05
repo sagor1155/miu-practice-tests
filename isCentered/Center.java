@@ -9,15 +9,6 @@ public class Center {
     }
 
     public static int isCentered(int[] nums) {
-        if (nums.length == 0 || nums.length % 2 == 0) {
-            return 0;
-        }
-        int middleIndex = nums.length / 2;
-        for(int i = 0; i < nums.length; i++) {
-            if (i != middleIndex && nums[middleIndex] >= nums[i]) { //early exit
-                return 0;
-            }
-        }
-        return 1;
+        return 0;
     }
 }

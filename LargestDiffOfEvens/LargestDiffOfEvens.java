@@ -8,19 +8,6 @@ public class LargestDiffOfEvens {
     }
 
     static int largestDifferenceOfEvens(int[] a) {
-        boolean evenFlag = false;
-        int largestDiff = 0;
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] % 2 == 0) {
-                for (int j = i + 1; j < a.length; j++) {
-                    if (a[j] % 2 == 0) {
-                        evenFlag = true;
-                        int diff = a[i] > a[j] ? a[i] - a[j] : a[j] - a[i];
-                        largestDiff = diff > largestDiff ? diff : largestDiff;
-                    }
-                }
-            }
-        }
-        return !evenFlag ? -1 : largestDiff;
+        return 0;
     }
 }

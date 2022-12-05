@@ -9,17 +9,6 @@ public class RapidIncrease {
     }
 
     public static int isRapidlyIncreasing(int[] nums) {
-        if (nums.length == 1) return 1;
-        for(int i = 1; i < nums.length; i++) {
-            int sum = 0, j = i - 1;
-            while(j >= 0) {
-                sum += nums[j];
-                j--;
-            }
-            if (nums[i] <= 2 * sum) {
-                return 0;
-            }
-        }
-        return 1;
+        return 0;
     }
 }

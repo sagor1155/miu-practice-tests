@@ -5,13 +5,6 @@ public class SuperArr {
     }
 
     public static int isSuper(int[] a) {
-        for(int i = 0; i < a.length; i++) {
-            int sum = 0;
-            for(int j = 0; j < i; j++) {
-                sum += a[j];
-            }
-            if(sum >= a[i]) return 0;
-        }
-        return 1;
+        return 0;
     }
 }

@@ -8,14 +8,6 @@ public class OneTwoThree {
     }
 
     public static int is123Arr(int[] nums) {
-        if (nums.length == 0 || nums.length % 3 != 0) {
-            return 0;
-        }
-        for(int i = 0; i < nums.length; i += 3) {
-            if(nums[i] != 1 || nums[i+1] != 2 || nums[i+2] != 3) {
-                return 0;
-            }
-        }
-        return 1;
+        return 0;
     }
 }

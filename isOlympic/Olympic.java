@@ -9,17 +9,6 @@ public class Olympic {
     }
 
     public static int isOlympic(int[] nums) {
-        for(int i = 0; i < nums.length; i++) {
-            int lessSum = 0;
-            for(int j = 0; j < nums.length; j++) {
-                if (nums[j] < nums[i]) {
-                    lessSum += nums[j];
-                }
-            }
-            if (nums[i] < lessSum) {
-                return 0;
-            }
-        }
-        return 1;
+        return 0;
     }
 }

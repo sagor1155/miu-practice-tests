@@ -9,23 +9,6 @@ public class ArrPOE {
     }
 
     public static int poeIndex(int[] nums) {
-        if (nums.length < 3) return -1;
-        int i = 0, j = nums.length - 1;
-        int idx = 1;
-        int leftSum = nums[i];
-        int rightSum = nums[j];
-        for(int k = 1; k < nums.length - 2; k++) {
-            if (leftSum < rightSum) {
-                i++;
-                leftSum += nums[i];
-                idx = i + 1;
-            } else {
-                j--;
-                rightSum += nums[j];
-                idx = j - 1;
-            }
-            
-        }
-        return leftSum == rightSum ? idx : -1;
+        return 0;
     }
 }

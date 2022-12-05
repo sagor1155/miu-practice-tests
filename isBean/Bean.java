@@ -8,16 +8,6 @@ public class Bean {
     }
 
     public static int isBean(int[] a) {
-        for(int i = 0; i < a.length; i++) {
-            boolean hasBean = false;
-            for(int j = 0; j < a.length; j++) {
-                if(a[j] == 2*a[i] || a[j] == 2*a[i] + 1 || a[j] == a[i] / 2) {
-                    hasBean = true;
-                    break;
-                }
-            }
-            if (!hasBean) return 0;
-        }
-        return 1;
+        return 0;
     }
 }

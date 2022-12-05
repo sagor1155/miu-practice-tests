@@ -11,16 +11,6 @@ public class PairedN {
     }
 
     public static int isPairedN(int[] nums, int n) {
-        if (nums.length < 2 || n > ((nums.length-1) + (nums.length - 2))) {
-            return 0;
-        }
-        for(int i = 0; i < nums.length; i++) {
-            for(int j= i + 1; j < nums.length; j++) {
-                if (nums[i] + nums[j] == n && i + j == n) {
-                    return 1;
-                }
-            }
-        }
         return 0;
     }
 }

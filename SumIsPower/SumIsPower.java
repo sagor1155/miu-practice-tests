@@ -7,17 +7,6 @@ public class SumIsPower {
     }
 
     public static int sumIsPower(int[] nums) {
-        if (nums == null) return 0;
-        int sum = 0;
-        for(int i = 0; i < nums.length; i++) {
-            sum += nums[i];
-        }
-        if (sum == 1) return 1;
-        int powerOf2 = 2;
-        while(powerOf2 <= sum) {
-            if (powerOf2 == sum) return 1;
-            powerOf2 *= 2;
-        }
         return 0;
     }
 }

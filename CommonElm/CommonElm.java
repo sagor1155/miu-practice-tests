@@ -6,36 +6,7 @@ public class CommonElm {
     }
 
     public static int[] commonElem(int[] first, int[] second) {
-        if (first == null || second == null) {
-            return null;
-        }
-        if (first.length == 0 || second.length == 0) {
-            return new int[0];
-        }
-        int min = first.length < second.length ? first.length : second.length;
-        int[] smaller, larger;
-        if (min == first.length) {
-            smaller = first;
-            larger = second;
-        } else {
-            smaller = second;
-            larger = first;
-        }
-        int[] minArr = new int[min];
-        int k = 0;
-        for(int i = 0; i < smaller.length ; i++) {
-            for(int j = 0; j < larger.length; j++) {
-                if (smaller[i] == larger[j]) {
-                    minArr[k] = smaller[i];
-                    k++;
-                }
-            }
-        }
-        int[] common = new int[k];
-        for(int i = 0; i < common.length; i++) {
-            common[i] = minArr[i];
-        }
-        return common;
+        return second;
     }
 
     public static void printArr(int[] nums) {

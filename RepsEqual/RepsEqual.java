@@ -10,12 +10,6 @@ public class RepsEqual {
     }
 
     public static int repsEqual(int[] a, int n) {
-        for(int i = a.length - 1; i >= 0; i--) {
-            int rem = n % 10;
-            n /= 10;
-
-            if(a[i] != rem) return 0;
-        }
-        return n != 0 ? 0 : 1;
+        return 0;
     }
 }

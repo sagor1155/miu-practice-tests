@@ -7,9 +7,6 @@ public class PerfectSquare {
     }
 
     public static int nextPerfectSquare(int n) {
-        if (n < 0) return 0;
-        double sqrt = Math.sqrt(n);
-        int nextInt = (int) sqrt + 1;
-        return nextInt * nextInt;
+        return n;
     }
 }

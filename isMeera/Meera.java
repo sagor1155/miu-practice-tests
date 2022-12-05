@@ -8,15 +8,6 @@ public class Meera {
     }
 
     static int isMeera(int[] a) {
-        boolean hasOne = false;
-        boolean hasNine = false;
-        for(int i = 0; i < a.length; i++) {
-            if(a[i] == 1) hasOne = true;
-            if(a[i] == 9) hasNine = true;
-            if (hasOne && hasNine) {
-                return 1;
-            }
-        }
         return 0;
     }
 }

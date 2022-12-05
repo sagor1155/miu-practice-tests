@@ -4,6 +4,7 @@ public class OneTwoOne {
     }
 
     public static int is121Arr(int[] nums) {
+        return 0;
         
     }
 }
