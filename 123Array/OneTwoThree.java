@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class OneTwoThree {
     public static void main(String[] args) {
@@ -17,7 +16,7 @@ public class OneTwoThree {
         }
 
         for (int i=0; i<nums.length; i+=3) {
-            if(!isMatch(Arrays.copyOfRange(nums, i, i+3), new int[]{1, 2, 3})) {
+            if(!isMatch(copyArray(nums, i, i+3), new int[]{1, 2, 3})) {
                 return 0;
             }
         }
@@ -35,5 +34,16 @@ public class OneTwoThree {
             }
         }
         return true;
+    }
+
+    public static int[] copyArray(int[] arr, int startIdx, int endIdx) {
+        if (endIdx > arr.length) {
+            return new int[]{};
+        }
+        int[] newArr = new int[endIdx-startIdx];
+        for (int i=startIdx; i<endIdx; i++) {
+            newArr[i-startIdx] = arr[i];
+        }
+        return newArr;
     }
 }
