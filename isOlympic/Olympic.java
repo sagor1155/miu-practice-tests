@@ -12,10 +12,11 @@ public class Olympic {
 
         int min = Integer.MAX_VALUE;
         for (int item : nums) {
-            int sumUpToItem = ((item + 1) * item) / 2 - item;
+            int target = item - 1;
+            int sumUpToTarget = ((target + 1) * target) / 2 ;
             min = Math.min(min, item);
 
-            if (sumUpToItem > item) {
+            if (sumUpToTarget > item) {
                 return 0;
             }
         }
