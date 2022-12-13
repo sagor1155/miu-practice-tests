@@ -9,6 +9,16 @@ public class SumEvenOdd {
     }
 
     public static int f(int[] a) {
-        return 0;
+        int X = 0, Y = 0;
+
+        for (int value : a) {
+            if (value % 2 == 0) {
+                Y += value;
+            } else {
+                X +=  value;
+            }
+        }
+
+        return X-Y;
     }
 }
