@@ -1,4 +1,5 @@
-An Olympic array is defined to be an array in which every value is greater than or equal to the sum of the values less than it. The sum of the values less than the minimum value in the array is defined to be 0.
+An Olympic array is defined to be an array in which every value is greater than or equal to the sum of the values less than it.
+The sum of the values less than the minimum value in the array is defined to be 0.
 
 For example, {3, 2, 1} is an Olympic array because
 

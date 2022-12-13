@@ -9,6 +9,16 @@ public class Olympic {
     }
 
     public static int isOlympic(int[] nums) {
-        return 0;
+
+        int min = Integer.MAX_VALUE;
+        for (int item : nums) {
+            int sumUpToItem = ((item + 1) * item) / 2 - item;
+            min = Math.min(min, item);
+
+            if (sumUpToItem > item) {
+                return 0;
+            }
+        }
+        return min == 1 ? 1: 0;
     }
 }
