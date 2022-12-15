@@ -8,7 +8,13 @@ public class Center {
         System.out.println(isCentered(new int[] {10}));
     }
 
-    public static int isCentered(int[] nums) {
-        return 0;
+    public static int isCentered(int[] a) {
+        if (a.length==0 || a.length%2==0) return 0;
+        int midIndex = a.length/2;
+        int midValue = a[midIndex];
+        for (int i=0; i<a.length; i++) {
+            if (i!=midIndex && a[i]<=midValue) return 0;
+        }
+        return 1;
     }
 }

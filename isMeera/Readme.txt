@@ -1,5 +1,6 @@
 Question 11
 A Meera array is any array that contains the value 1 if and only if it contains 9.
+
 The array {7,9,0,10,1} is a Meera array because it contains 1 and 9.
 The array {6,10,8} is not a Meera array because it contains no 1 and no 9.
 The array {7,6,1} is not a Meera array because it contains 1 but does not contain a 9.
