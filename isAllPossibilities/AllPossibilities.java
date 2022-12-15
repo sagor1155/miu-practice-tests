@@ -9,6 +9,20 @@ public class AllPossibilities {
     }
 
     public static int isAllPossibilities(int[] nums) {
-        return 0;
+        if (nums.length==0) {
+            return 0;
+        }
+        for (int i=0; i<nums.length; i++) {
+            boolean containsElem = false;
+            for (int j=0; j<nums.length; j++) {
+                if (i==nums[j]) {
+                    containsElem = true;
+                }
+            }
+            if (!containsElem) {
+                return 0;
+            }
+        }
+        return 1;
     }
 }
