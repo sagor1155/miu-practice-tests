@@ -10,6 +10,14 @@ public class CharArray {
     }
 
     public static char[] f(char[] chars, int start, int len) {
-        return chars;
+
+        if(start < 0 || len < 0 || len + start > chars.length) {
+            return new char[]{};
+        }
+        char[] result = new char[len];
+        for(int i = start, j = 0; j < len; i++, j++){
+            result[j] = chars[i];
+        }
+        return result;
     }
 }
