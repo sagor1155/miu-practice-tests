@@ -8,6 +8,19 @@ public class Bean {
     }
 
     public static int isBean(int[] a) {
-        return 0;
+        for (int j : a) {
+            boolean beanExist = false;
+            for (int k : a) {
+                if (k == 2 * j || k == 2 * j + 1 || k == j / 2) {
+                    beanExist = true;
+                    break;
+                }
+            }
+            if (!beanExist) {
+                return 0;
+            }
+
+        }
+        return 1;
     }
 }
