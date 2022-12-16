@@ -8,6 +8,14 @@ public class Meera {
     }
 
     static int isMeera(int[] a) {
-        return 0;
+        boolean foundOne = false, foundNine = false;
+        for(int v : a) {
+            if(v == 1) {
+                foundOne = true;
+            } else if (v == 9) {
+                foundNine = true;
+            }
+        }
+        return foundOne && foundNine ? 1 : 0;
     }
 }
