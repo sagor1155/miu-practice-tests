@@ -9,6 +9,26 @@ public class Center {
     }
 
     public static int isCentered(int[] nums) {
-        return 0;
+        int len = nums.length;
+
+        if(len == 0) {
+            return 0;
+        }
+        if(len % 2 == 0) {
+            return 0;
+        }
+
+        int mid = (len/2);
+        int centerValue = nums[mid];
+
+        for(int i = 0; i < len ; i++) {
+            if(i == mid){
+                continue;
+            }
+            if(centerValue >= nums[i]) {
+                return 0;
+            }
+        }
+        return 1;
     }
 }
