@@ -1,6 +1,8 @@
 largestDifferenceOfEvens
 Write a function named largestDifferenceOfEvens which returns the largest difference between even 
-valued elements of its array argument. For example 
+valued elements of its array argument. 
+
+For example 
 largestDifferenceOfEvens(new int[ ]{-2, 3, 4, 9}) returns 6 = (4 – (-2)). 
 If there are fewer than 2 even numbers in the array, largestDifferenceOfEvens should return -1.
 
